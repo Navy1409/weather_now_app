@@ -13,7 +13,10 @@ class _loadingState extends State<loading> {
     return MaterialApp(
       home: SafeArea(
         child: Scaffold(
-          body: Text("Loading page"),
+          body:TextButton(onPressed: (){
+            Navigator.pushNamed(context, '/home');
+          },
+          child: Text('home'),),
         ),
       ),
     );

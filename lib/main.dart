@@ -4,9 +4,8 @@ import 'package:weather_now/activity/loading.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Home(    ),
     routes: {
-       // "/": (context) => loading(),
+       "/": (context) => loading(),
       "/home" : (context) => Home(),
     },
   ));
